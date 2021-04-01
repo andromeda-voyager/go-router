@@ -3,7 +3,7 @@
 ## Features
 * Middleware
 * Path Parameters
-* Groups with different sets of middleware
+* Groups that allow routes to use different sets of middleware
 
 ## Installation
 
@@ -54,7 +54,7 @@ func init() {
   }
 }
 ```
-Different sets of middleware can be assigned to each router group that is created. 
+Middleware is assigned at the group level. To use different middleware for certain routes, create multiple groups.
 
 ### Path Parameters
 
